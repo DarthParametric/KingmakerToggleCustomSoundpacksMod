@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 using UnityModManagerNet;
 
 namespace ToggleCustomSoundpacks
@@ -15,10 +16,10 @@ namespace ToggleCustomSoundpacks
             public string Name = "";
             public int LoadOrder = 1000;
             public bool Enabled = false;
-            [NonSerializedAttribute]
+            [XmlIgnore]
             public bool IsValid = true;
-            [NonSerializedAttribute]
-            public String[] Files = new string[] { };
+            [XmlIgnore]
+            public string[] Files = new string[] { };
         }
         public List<SoundPackSettings> SoundPackSettingsList = new List<SoundPackSettings>();
         public override void Save(UnityModManager.ModEntry modEntry)
@@ -39,14 +40,17 @@ namespace ToggleCustomSoundpacks
                     });
                 }
             }
-            foreach(var sp in settings.SoundPackSettingsList)
+            settings.SoundPackSettingsList = settings.SoundPackSettingsList
+                .Where(sp => directories.Contains(sp.Name))
+                .ToList();
+            foreach (var sp in settings.SoundPackSettingsList)
             {
+
                 sp.Files = Directory.GetFiles(Path.Combine(modEntry.Path, sp.Name), "*.bnk")
                     .Select(f => Path.GetFileNameWithoutExtension(f))
                     .ToArray();
             }
             settings.SoundPackSettingsList = settings.SoundPackSettingsList
-                .Where(sp => directories.Contains(sp.Name))
                 .Where(sp => sp.Files.Length > 0)
                 .OrderBy(sp => sp.LoadOrder).ToList();
             for(int i = 0; i < settings.SoundPackSettingsList.Count; i++)

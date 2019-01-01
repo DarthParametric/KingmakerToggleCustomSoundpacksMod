@@ -155,6 +155,7 @@ namespace ToggleCustomSoundpacks
                             settings.SoundPackSettingsList = settings.SoundPackSettingsList.OrderBy(sp => sp.LoadOrder).ToList();
                             MarkDirty(soundPackSetting);
                             MarkDirty(swapTarget);
+                            Reload(modEntry);
                         }
                     }
                     if (GUILayout.Button("Down", GUILayout.ExpandWidth(false)))
@@ -167,6 +168,7 @@ namespace ToggleCustomSoundpacks
                             settings.SoundPackSettingsList = settings.SoundPackSettingsList.OrderBy(sp => sp.LoadOrder).ToList();
                             MarkDirty(soundPackSetting);
                             MarkDirty(swapTarget);
+                            Reload(modEntry);
                         }
                     }
                     GUILayout.EndHorizontal();
