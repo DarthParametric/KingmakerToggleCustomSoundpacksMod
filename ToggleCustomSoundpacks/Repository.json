@@ -1,9 +1,9 @@
 {
-	"Releases":
-	[
+  "Releases":
+  [
     {
       "Id": "ToggleCustomSoundpacks",
       "Version": "1.0.0"
     }
-	]
+  ]
 }
