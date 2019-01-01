@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleCustomSoundpacks", "ToggleCustomSoundpacks\ToggleCustomSoundpacks.csproj", "{783C5DFA-AE0B-4FC8-A5ED-DFF58477B29A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Install Debug|Any CPU = Install Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{783C5DFA-AE0B-4FC8-A5ED-DFF58477B29A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{783C5DFA-AE0B-4FC8-A5ED-DFF58477B29A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{783C5DFA-AE0B-4FC8-A5ED-DFF58477B29A}.Install Debug|Any CPU.ActiveCfg = Install Debug|Any CPU
+		{783C5DFA-AE0B-4FC8-A5ED-DFF58477B29A}.Install Debug|Any CPU.Build.0 = Install Debug|Any CPU
+		{783C5DFA-AE0B-4FC8-A5ED-DFF58477B29A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{783C5DFA-AE0B-4FC8-A5ED-DFF58477B29A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7229BA14-B9B9-4631-B743-E0BA0D1402EF}
+	EndGlobalSection
+EndGlobal
