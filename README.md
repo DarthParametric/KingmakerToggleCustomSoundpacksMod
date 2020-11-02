@@ -1,11 +1,13 @@
-# KingmakerToggleCustomSoundpacks
-Mod to toggle custom soundpacks for the Game Pathfinder Kingmaker.
+# Kingmaker Toggle Custom Soundpacks
+A mod to toggle custom soundpacks for the Game Pathfinder Kingmaker.
+
+Forked from SpaceHamster's original to build against a newer version of Unity Mod Manager and (optionally) the last pre-Definitive Edition stable version of the game, 2.08. 
 
 ## Install
-1. Download and install [Unity Mod Manager](https://www.nexusmods.com/site/mods/21)
-2. Download the [mod](https://github.com/spacehamster/KingmakerVisualAdjustmentsMod/releases)
-3. Extract the archive and put the mod folder into 'Mods' folder of the Game (\Steam\steamapps\common\Pathfinder Kingmaker\Mods)
+1. Download and install [Unity Mod Manager](https://www.nexusmods.com/site/mods/21), requires v0.22.13+
+2. Download the [latest version of the mod](https://github.com/DarthParametric/KingmakerToggleCustomSoundpacksMod/releases/latest)
+3. Run Unity Mod Manager, set the game to Kingmaker and install, then drag and drop the mod archive onto the bottom section of the Mods tab to install
 4. Extract any custom sound packs to individual folders inside the 'ToggleCustomSoundpacks' folder (e.g. Mods\ToggleCustomSoundpacks\Soundpack1\Soundpack.bnk)
 5. Run the game
-6. Open the Unity Mod Manager Interface (Ctrl+f10)
+6. Open the Unity Mod Manager Interface (default hotkey CTRL + F10)
 7. Enable the Soundpack from the Unity Mod Manager Interface
