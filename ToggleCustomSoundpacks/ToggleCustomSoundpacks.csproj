@@ -40,6 +40,10 @@
       <HintPath>libs\0Harmony12.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityModManager">
+      <HintPath>libs\UnityModManager.dll</HintPath>
+      <Private>False</Private>
+	</Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>libs\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
